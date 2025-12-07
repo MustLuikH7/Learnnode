@@ -1,8 +1,11 @@
 {
   "name": "learnnode",
-  "module": "index.ts",
+  "module": "index.js",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "vite"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "vite": "^7.2.6"
