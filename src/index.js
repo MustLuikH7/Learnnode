@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 
-import { createWebHashHistory, createRouter } from 'vue-router'
+import { createWebHashHistory, createWebHistory, createRouter } from 'vue-router'
 
 import ToDo from "./Pages/ToDo.vue";
 import Modals from "./Pages/Modals.vue";
@@ -11,7 +11,7 @@ const routes = [
 ]
 
 export const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 })
 
