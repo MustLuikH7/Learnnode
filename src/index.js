@@ -9,11 +9,13 @@ import {
 import ToDo from "./Pages/ToDo.vue";
 import Modals from "./Pages/Modals.vue";
 import Messages from "./Pages/Messages.vue";
+import Buttons from "./Pages/Buttons.vue";
 
 const routes = [
   { path: "/", component: ToDo, name: "ToDo" },
   { path: "/modals", component: Modals, name: "Modals" },
   { path: "/messages", component: Messages, name: "Messages" },
+  { path: "/buttons", component: Buttons, name: "Buttons" },
 ];
 
 export const router = createRouter({

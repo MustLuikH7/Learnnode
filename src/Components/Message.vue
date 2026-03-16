@@ -2,7 +2,6 @@
 let props = defineProps({
     title: {
         type: String,
-        //required: true
     },
     color: {
         type: String,
