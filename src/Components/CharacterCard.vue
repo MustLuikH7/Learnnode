@@ -5,7 +5,9 @@ defineProps(['character'])
 <template>
     <div class="card">
         <header class="card-header">
-            <p class="card-header-title">{{ character.name }}</p>
+            <p class="card-header-title">
+                {{ character.name }}
+            </p>
         </header>
         <div class="card-image">
             <figure class="image is-4by3">
@@ -13,7 +15,6 @@ defineProps(['character'])
             </figure>
         </div>
         <div class="card-content">
-
             <div class="content">
                 <table>
                     <tbody>
