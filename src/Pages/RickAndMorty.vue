@@ -92,9 +92,15 @@ function search() {
                     <div class="field is-grouped is-grouped-multiline">
                         <div class="control">
                             <div class="buttons has-addons">
-                                <button class="button is-small" :class="[filters.status === 'alive' ? 'is-link' : 'is-light']" @click="toggleFilter('status', 'alive')">Alive</button>
-                                <button class="button is-small" :class="[filters.status === 'dead' ? 'is-link' : 'is-light']" @click="toggleFilter('status', 'dead')">Dead</button>
-                                <button class="button is-small" :class="[filters.status === 'unknown' ? 'is-link' : 'is-light']" @click="toggleFilter('status', 'unknown')">Unknown</button>
+                                <button class="button is-small"
+                                    :class="[filters.status === 'alive' ? 'is-link' : 'is-light']"
+                                    @click="toggleFilter('status', 'alive')">Alive</button>
+                                <button class="button is-small"
+                                    :class="[filters.status === 'dead' ? 'is-link' : 'is-light']"
+                                    @click="toggleFilter('status', 'dead')">Dead</button>
+                                <button class="button is-small"
+                                    :class="[filters.status === 'unknown' ? 'is-link' : 'is-light']"
+                                    @click="toggleFilter('status', 'unknown')">Unknown</button>
                             </div>
                         </div>
                     </div>
@@ -107,10 +113,18 @@ function search() {
                     <div class="field is-grouped is-grouped-multiline">
                         <div class="control">
                             <div class="buttons has-addons">
-                                <button class="button is-small" :class="[filters.gender === 'female' ? 'is-link' : 'is-light']" @click="toggleFilter('gender', 'female')">Female</button>
-                                <button class="button is-small" :class="[filters.gender === 'male' ? 'is-link' : 'is-light']" @click="toggleFilter('gender', 'male')">Male</button>
-                                <button class="button is-small" :class="[filters.gender === 'genderless' ? 'is-link' : 'is-light']" @click="toggleFilter('gender', 'genderless')">Genderless</button>
-                                <button class="button is-small" :class="[filters.gender === 'unknown' ? 'is-link' : 'is-light']" @click="toggleFilter('gender', 'unknown')">Unknown</button>
+                                <button class="button is-small"
+                                    :class="[filters.gender === 'female' ? 'is-link' : 'is-light']"
+                                    @click="toggleFilter('gender', 'female')">Female</button>
+                                <button class="button is-small"
+                                    :class="[filters.gender === 'male' ? 'is-link' : 'is-light']"
+                                    @click="toggleFilter('gender', 'male')">Male</button>
+                                <button class="button is-small"
+                                    :class="[filters.gender === 'genderless' ? 'is-link' : 'is-light']"
+                                    @click="toggleFilter('gender', 'genderless')">Genderless</button>
+                                <button class="button is-small"
+                                    :class="[filters.gender === 'unknown' ? 'is-link' : 'is-light']"
+                                    @click="toggleFilter('gender', 'unknown')">Unknown</button>
                             </div>
                         </div>
                     </div>
@@ -142,7 +156,7 @@ function search() {
                     <button v-else-if="page === current" class="pagination-link is-current" aria-label="Page 46"
                         aria-current="page">{{ page }}</button>
                     <button v-else class="pagination-link" aria-label="Goto page 1" @click="getCharacters(page)">{{ page
-                        }}</button>
+                    }}</button>
                 </li>
 
 
